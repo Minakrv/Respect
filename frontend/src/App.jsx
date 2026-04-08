@@ -16,7 +16,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Delivery from "./Components/Delivery";
  
-import i18n from './Components/I18n';
+import i18n from './Components/i18n';
 i18n
 
 
