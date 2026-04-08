@@ -14,7 +14,14 @@ connectCloudinary()
 
 // Middlewares
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin: [
+        'http://localhost:5173',
+        'http://localhost:5174',
+        'https://respect-indol.vercel.app',
+        'https://respect-s5pn.vercel.app'
+    ]
+}))
 
 
 // API endpoints
