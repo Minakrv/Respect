@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #232145;
+}
+
+
+
+.animate-scroll {
+  animation: scroll 60s linear infinite;
+  display: flex;
+}
+
+a.active hr{
+    display: block;
+}
+
+*{
+    font-family: Outfit;
+    direction: rtl;
+    font-family: 'Vazirmatn', sans-serif;
+    box-sizing: border-box;
+  
+}
+.prata-regular {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  @media (max-width:640px) {
+    a.active{
+        background-color: black;
+        color: white;
+    }
+    
+  }
